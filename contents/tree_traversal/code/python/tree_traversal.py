@@ -50,7 +50,7 @@ def dfs_stack(node):
     while stack:
         node = stack.pop()
         if node.children:
-            stack += node.children
+            stack.extend(node.children)
         print(node.data, end=' ')
 
 
